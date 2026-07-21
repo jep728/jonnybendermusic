@@ -377,3 +377,60 @@ footer {
     margin-top:25px;
 
 }
+/* Video Grid */
+
+.video-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:40px;
+
+    max-width:1000px;
+
+    margin:40px auto;
+
+}
+
+
+.video-card {
+
+    background:#111;
+
+    border:1px solid #333;
+
+    padding:25px;
+
+}
+
+
+.video-card iframe {
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+}
+
+
+.video-card h3 {
+
+    font-family:'Cinzel', serif;
+
+    letter-spacing:3px;
+
+    margin-top:20px;
+
+}
+
+
+@media(max-width:700px){
+
+.video-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+}
