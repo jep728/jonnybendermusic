@@ -340,3 +340,40 @@ footer {
     }
 
 }
+/* Video Section */
+
+.video-card {
+
+    max-width:800px;
+
+    margin:40px auto;
+
+    padding:30px;
+
+    background:#111;
+
+    border:1px solid #333;
+
+}
+
+
+.video-card iframe {
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+}
+
+
+.video-card h3 {
+
+    font-family:'Cinzel', serif;
+
+    font-size:28px;
+
+    letter-spacing:3px;
+
+    margin-top:25px;
+
+}
