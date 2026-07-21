@@ -226,3 +226,117 @@ footer {
     }
 
 }
+/* Music Section */
+
+
+.music-card {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    padding:40px;
+
+    background:#111;
+
+    border:1px solid #333;
+
+}
+
+
+.album-art img {
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border:2px solid #555;
+
+}
+
+
+
+.music-info {
+
+    text-align:left;
+
+}
+
+
+
+.music-info h3 {
+
+    font-family:'Cinzel', serif;
+
+    font-size:32px;
+
+    letter-spacing:4px;
+
+}
+
+
+
+.music-buttons {
+
+    margin-top:30px;
+
+}
+
+
+
+.music-button {
+
+    display:inline-block;
+
+    margin:8px;
+
+    padding:12px 25px;
+
+    border:1px solid #aaa;
+
+    color:white;
+
+    text-decoration:none;
+
+    letter-spacing:2px;
+
+}
+
+
+.music-button:hover {
+
+    background:white;
+
+    color:black;
+
+}
+
+
+/* Mobile Music Layout */
+
+@media(max-width:700px){
+
+    .music-card {
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+    .music-info {
+
+        text-align:center;
+
+    }
+
+}
