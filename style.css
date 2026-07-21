@@ -2,7 +2,7 @@ body {
     margin: 0;
     background: #080808;
     color: #eeeeee;
-    font-family: Oswald, Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
 
@@ -84,15 +84,15 @@ nav {
 
 
 h1 {
-
-    font-size: 55px;
-    letter-spacing: 8px;
-    line-height: 1.1;
+    font-family: 'Cinzel', serif;
+    font-size: 65px;
+    letter-spacing: 10px;
+    line-height: 1.15;
     margin: 20px 0;
-
+    text-transform: uppercase;
     text-shadow:
-    0 0 10px #000;
-
+        0 0 10px #000,
+        0 0 25px #000;
 }
 
 
