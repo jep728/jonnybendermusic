@@ -434,3 +434,69 @@ footer {
 }
 
 }
+/* Photo Gallery */
+
+.photo-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+}
+
+
+.photo-card {
+
+    overflow: hidden;
+
+    border: 1px solid #333;
+
+    background: #111;
+
+}
+
+
+.photo-card img {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    transition: transform .4s ease;
+
+}
+
+
+.photo-card img:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+/* Mobile Photo Layout */
+
+@media(max-width:700px) {
+
+    .photo-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .photo-card img {
+
+        height: auto;
+
+    }
+
+}
