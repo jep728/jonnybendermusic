@@ -199,20 +199,28 @@ Moments from the journey. The stories behind the songs.
 </p>
 
 </footer>
-
-<p>👀 Visitors: <span id="visitor-count">Loading...</span></p>
+<div style="text-align:center; color:white; font-size:18px; margin:20px 0;">
+  👀 Visitors: <span id="visitor-count">Loading...</span>
+</div>
 
 <script>
 fetch('https://api.counterapi.dev/v1/jonnybendermusic/visits/up')
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Counter API failed');
+    }
+    return response.json();
+  })
   .then(data => {
     document.getElementById('visitor-count').textContent = data.count;
   })
   .catch(error => {
-    document.getElementById('visitor-count').textContent = 'Unavailable';
     console.error('Visitor counter error:', error);
+    document.getElementById('visitor-count').textContent = 'Error';
   });
 </script>
+
+
 
 
 </body>
