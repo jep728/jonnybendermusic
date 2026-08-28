@@ -195,16 +195,17 @@ Moments from the journey. The stories behind the songs.
 
 </footer>
 
-    <p class="visitor-counter">👀 Visitors: <span id="visitor-count">Loading...</span></p>
+<p>👀 Visitors: <span id="visitor-count">Loading...</span></p>
 
 <script>
-fetch('https://api.countapi.xyz/hit/jonnybendermusic.com/visits')
+fetch('https://api.counterapi.dev/v1/jonnybendermusic/visits/up')
   .then(response => response.json())
   .then(data => {
-    document.getElementById('visitor-count').textContent = data.value;
+    document.getElementById('visitor-count').textContent = data.count;
   })
   .catch(error => {
     document.getElementById('visitor-count').textContent = 'Unavailable';
+    console.error('Visitor counter error:', error);
   });
 </script>
 
