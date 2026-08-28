@@ -194,6 +194,15 @@ Moments from the journey. The stories behind the songs.
 </p>
 
 </footer>
+    <p>👀 Visitors: <span id="visitor-count">Loading...</span></p>
+
+<script>
+fetch('https://api.countapi.xyz/hit/jonnybendermusic.com/visits')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('visitor-count').textContent = data.value;
+  });
+</script>
 
 
 </body>
