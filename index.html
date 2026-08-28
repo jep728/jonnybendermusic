@@ -199,33 +199,21 @@ Moments from the journey. The stories behind the songs.
 </p>
 
 </footer>
-<div style="text-align:center; color:white; font-size:18px; margin:20px 0;">
-  👀 Visitors: <span id="visitor-count">Loading...</span>
+<div style="text-align:center; color:white; font-size:20px; margin:20px;">
+  👀 Visitors: <span id="visitor-count">Checking...</span>
 </div>
 
 <script>
-fetch('https://api.counterapi.dev/v1/jonnybendermusic/visits/up')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Counter API failed');
-    }
-    return response.json();
-  })
+fetch("https://api.counterapi.dev/v1/jonnybendermusic/visits/up")
+  .then(response => response.text())
   .then(data => {
-    document.getElementById('visitor-count').textContent = data.count;
+    console.log("Counter response:", data);
+    document.getElementById("visitor-count").textContent = data;
   })
   .catch(error => {
-    console.error('Visitor counter error:', error);
-    document.getElementById('visitor-count').textContent = 'Error';
+    console.error("Counter error:", error);
+    document.getElementById("visitor-count").textContent = "API Error";
   });
-</script>
-
-<div style="text-align:center; color:white; font-size:20px; margin:20px;">
-  👀 Visitors: <span id="visitor-count">TESTING</span>
-</div>
-
-<script>
-document.getElementById("visitor-count").textContent = "JAVASCRIPT WORKS!";
 </script>
 
 
