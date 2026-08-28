@@ -199,22 +199,6 @@ Moments from the journey. The stories behind the songs.
 </p>
 
 </footer>
-<div style="text-align:center; color:white; font-size:20px; margin:20px;">
-  👀 Visitors: <span id="visitor-count">Checking...</span>
-</div>
-
-<script>
-fetch("https://api.counterapi.dev/v1/jonnybendermusic/visits/up")
-  .then(response => response.text())
-  .then(data => {
-    console.log("Counter response:", data);
-    document.getElementById("visitor-count").textContent = data;
-  })
-  .catch(error => {
-    console.error("Counter error:", error);
-    document.getElementById("visitor-count").textContent = "API Error";
-  });
-</script>
 
 
 </body>
