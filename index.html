@@ -1,323 +1,485 @@
+Absolutely — I cleaned up the structure, fixed the mismatched/duplicate video markup, added the **Songlist** section, made the `#videos` navigation link work, and kept your existing content and file names intact.
+
+ Cleaned-up index.html
+
+```
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Jonny Bender | Rock That Refuses to Stay Buried</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <div class="logo">JONNY BENDER</div>
-        <div class="links">
-            <a href="#music">Music</a>
-            <a href="#songlist">Songlist</a>
-            <a href="#videos">Videos</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-</header>
+    <!-- =========================
+         HEADER / NAVIGATION
+    ========================== -->
 
+    <header>
+        <nav>
 
-<section class="hero">
+            <div class="logo">
+                JONNY BENDER
+            </div>
 
-    <img src="bender-logo.png" alt="Jonny Bender Logo">
+            <div class="links">
+                <a href="#music">Music</a>
+                <a href="#songlist">Songlist</a>
+                <a href="#videos">Videos</a>
+                <a href="#about">About</a>
+                <a href="#photos">Photos</a>
+                <a href="#contact">Contact</a>
+            </div>
 
-    <h1>ROCK THAT REFUSES<br>TO STAY BURIED</h1>
+        </nav>
+    </header>
 
-    <p>
-        Dark melodies. Heavy guitars. Songs forged from struggle,
-        redemption, faith, and the fight to rise again.
-    </p>
+    <!-- =========================
+         HERO
+    ========================== -->
 
-    <a class="button" href="#music">ENTER THE SOUND</a>
+    <section class="hero">
 
-</section>
+        <img src="bender-logo.png" alt="Jonny Bender Logo">
 
-
-<section id="music">
-
-<h2>MUSIC</h2>
-
-<p>
-Original songs forged from struggle, redemption, faith, and the fight to rise again.
-</p>
-
-
-<div class="music-card">
-
-    <div class="album-art">
-        <img src="bender-logo.png" alt="Jonny Bender Music">
-    </div>
-
-
-    <div class="music-info">
-
-        <h3>Latest Release</h3>
-
-        <h4>Coming Soon</h4>
+        <h1>
+            ROCK THAT REFUSES<br>
+            TO STAY BURIED
+        </h1>
 
         <p>
-        New music from Jonny Bender.
-        Stay tuned for releases, videos, and stories behind the songs.
+            Dark melodies. Heavy guitars. Songs forged from struggle,
+            redemption, faith, and the fight to rise again.
         </p>
 
+        <a class="button" href="#music">
+            ENTER THE SOUND
+        </a>
 
-        <div class="music-buttons">
+    </section>
 
-            <a href="#" class="music-button">
-            Spotify
-            </a>
+    <!-- =========================
+         MUSIC
+    ========================== -->
 
-            <a href="#" class="music-button">
-            Apple Music
-            </a>
+    <section id="music">
 
-            <a href="#" class="music-button">
-            YouTube
-            </a>
+        <h2>MUSIC</h2>
+
+        <p>
+            Original songs forged from struggle, redemption, faith,
+            and the fight to rise again.
+        </p>
+
+        <div class="music-card">
+
+            <div class="album-art">
+
+                <img src="bender-logo.png" alt="Jonny Bender Music">
+
+            </div>
+
+            <div class="music-info">
+
+                <h3>Latest Release</h3>
+
+                <h4>Coming Soon</h4>
+
+                <p>
+                    New music from Jonny Bender.
+                    Stay tuned for releases, videos, and stories
+                    behind the songs.
+                </p>
+
+                <div class="music-buttons">
+
+                    <a href="#" class="music-button">
+                        Spotify
+                    </a>
+
+                    <a href="#" class="music-button">
+                        Apple Music
+                    </a>
+
+                    <a href="#" class="music-button">
+                        YouTube
+                    </a>
+
+                </div>
+
+            </div>
 
         </div>
 
-    </div>
+    </section>
 
-</div>
+    <!-- =========================
+         SONGLIST
+    ========================== -->
 
-
-</section>
-
-<div class="video-grid">
-    
     <section id="songlist">
 
-    <h2>SONGLIST</h2>
-
-    <p>
-        A selection of rock and pop favorites performed live by Jonny Bender.
-    </p>
-
-    <div class="songlist">
-
-        <div class="song">
-            <span class="song-title">Wanted Dead or Alive</span>
-            <span class="artist">Bon Jovi</span>
-        </div>
-
-        <div class="song">
-            <span class="song-title">Free Fallin'</span>
-            <span class="artist">Tom Petty</span>
-        </div>
-
-        <div class="song">
-            <span class="song-title">Simple Man</span>
-            <span class="artist">Lynyrd Skynyrd</span>
-        </div>
-
-        <div class="song">
-            <span class="song-title">Plush</span>
-            <span class="artist">Stone Temple Pilots</span>
-        </div>
-
-        <div class="song">
-            <span class="song-title">The Man Who Sold the World</span>
-            <span class="artist">David Bowie / Nirvana</span>
-        </div>
-
-        <div class="song">
-            <span class="song-title">Everlong</span>
-            <span class="artist">Foo Fighters</span>
-        </div>
-
-        <div class="song">
-            <span class="song-title">Black</span>
-            <span class="artist">Pearl Jam</span>
-        </div>
-
-        <div class="song">
-            <span class="song-title">Creep</span>
-            <span class="artist">Radiohead</span>
-        </div>
-
-        <div class="song">
-            <span class="song-title">Wicked Game</span>
-            <span class="artist">Chris Isaak</span>
-        </div>
-
-        <div class="song">
-            <span class="song-title">3AM</span>
-            <span class="artist">Matchbox Twenty</span>
-        </div>
-
-    </div>
-
-</section>
-
-    <div class="video-card">
-
-        <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/WjqLIRkcEDQ"
-            title="Acoustic Clip"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-        </iframe>
-
-        <video width="560" height="315" controls>
-            <source src="/photos/Bender 8.mov" type="video/quicktime">
-            Your browser does not support the video tag.
-        </video>
-
-        <video width="560" height="315" controls>
-            <source src="/photos/Bender 9.mov" type="video/quicktime">
-            Your browser does not support the video tag.
-        </video>
-
-    </div>
-
-
-    <div class="video-card">
-
-        <iframe 
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/MY9yEIu1Ilw"
-            title="Killing Angels"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-
-        <h3>Killing Angels</h3>
+        <h2>SONGLIST</h2>
 
         <p>
-            Completely written, performed and recorded by JB
+            A selection of rock and pop favorites performed live
+            by Jonny Bender.
         </p>
+
+        <div class="songlist">
+
+            <div class="song">
+                <span class="song-title">Wanted Dead or Alive</span>
+                <span class="artist">Bon Jovi</span>
+            </div>
+
+            <div class="song">
+                <span class="song-title">Free Fallin'</span>
+                <span class="artist">Tom Petty</span>
+            </div>
+
+            <div class="song">
+                <span class="song-title">Simple Man</span>
+                <span class="artist">Lynyrd Skynyrd</span>
+            </div>
+
+            <div class="song">
+                <span class="song-title">Plush</span>
+                <span class="artist">Stone Temple Pilots</span>
+            </div>
+
+            <div class="song">
+                <span class="song-title">The Man Who Sold the World</span>
+                <span class="artist">David Bowie / Nirvana</span>
+            </div>
+
+            <div class="song">
+                <span class="song-title">Everlong</span>
+                <span class="artist">Foo Fighters</span>
+            </div>
+
+            <div class="song">
+                <span class="song-title">Black</span>
+                <span class="artist">Pearl Jam</span>
+            </div>
+
+            <div class="song">
+                <span class="song-title">Creep</span>
+                <span class="artist">Radiohead</span>
+            </div>
+
+            <div class="song">
+                <span class="song-title">Wicked Game</span>
+                <span class="artist">Chris Isaak</span>
+            </div>
+
+            <div class="song">
+                <span class="song-title">3AM</span>
+                <span class="artist">Matchbox Twenty</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         VIDEOS
+    ========================== -->
+
+    <section id="videos">
+
+        <h2>VIDEOS</h2>
+
+        <div class="video-grid">
+
+            <!-- Acoustic Clip -->
+
+            <div class="video-card">
+
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/WjqLIRkcEDQ"
+                    title="Jonny Bender Acoustic Clip"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+                <video width="560" height="315" controls>
+
+                    <source
+                        src="/photos/Bender 8.mov"
+                        type="video/quicktime">
+
+                    Your browser does not support the video tag.
+
+                </video>
+
+                <video width="560" height="315" controls>
+
+                    <source
+                        src="/photos/Bender 9.mov"
+                        type="video/quicktime">
+
+                    Your browser does not support the video tag.
+
+                </video>
+
+            </div>
+
+            <!-- Killing Angels -->
+
+            <div class="video-card">
+
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/MY9yEIu1Ilw"
+                    title="Killing Angels"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+                <h3>
+                    Killing Angels
+                </h3>
+
+                <p>
+                    Completely written, performed and recorded by JB.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section id="about">
+
+        <h2>ABOUT JONNY BENDER</h2>
+
+        <p>
+            For Bender, live music isn’t just about playing songs—it’s
+            about creating a shared experience with the room.
+        </p>
+
+        <p>
+            Armed with a solo acoustic guitar and a passion for great
+            melodies, Bender brings high-energy acoustic renditions
+            of rock and pop favorites from the 90s through today.
+            From nostalgic throwbacks to current chart-toppers,
+            every setlist is built to keep listeners singing along,
+            tapping their feet, and feeling right at home.
+        </p>
+
+        <h3>
+            The Live Experience
+        </h3>
+
+        <p>
+            What sets Bender apart on stage is a genuine love for
+            audience interaction. There’s no strict wall between
+            the performer and the crowd; every show is tailored
+            to the energy of the room, turning a simple performance
+            into a fun, interactive event.
+        </p>
+
+        <p>
+            <em>
+                "If there’s an audience ready to listen,
+                I’m ready to play."
+            </em>
+        </p>
+
+        <h3>
+            Any Stage, Anywhere
+        </h3>
+
+        <p>
+            No crowd is too intimate, and no stage is too large.
+            Bender approaches every setting with the exact same
+            passion—whether it’s:
+        </p>
+
+        <ul>
+
+            <li>
+                Cozy coffee shops and local acoustic rooms
+            </li>
+
+            <li>
+                Vibrant bars, breweries, and private events
+            </li>
+
+            <li>
+                Festival stages in front of thousands of fans
+            </li>
+
+        </ul>
+
+        <p>
+            Wherever there’s a spot to plug in and play, Bender
+            delivers an authentic, high-energy acoustic performance
+            that leaves a lasting impression long after the final chord.
+        </p>
+
+    </section>
+
+    <!-- =========================
+         PHOTOS
+    ========================== -->
+
+    <section id="photos">
+
+        <h2>PHOTOS</h2>
+
+        <p>
+            Moments from the journey. The stories behind the songs.
+        </p>
+
+        <div class="photo-grid">
+
+            <div class="photo-card">
+
+                <img
+                    src="photos/bender 2.jpg"
+                    alt="Jonny Bender performing">
+
+            </div>
+
+            <div class="photo-card">
+
+                <img
+                    src="photos/bender 3.jpg"
+                    alt="Jonny Bender">
+
+            </div>
+
+            <div class="photo-card">
+
+                <img
+                    src="photos/bender5.jpg"
+                    alt="Jonny Bender">
+
+            </div>
+
+            <div class="photo-card">
+
+                <img
+                    src="photos/Bender 4.png"
+                    alt="Jonny Bender">
+
+            </div>
+
+            <div class="photo-card">
+
+                <img
+                    src="photos/Bender 6.jpg"
+                    alt="Jonny Bender">
+
+            </div>
+
+            <div class="photo-card">
+
+                <img
+                    src="photos/Bender 7.jpg"
+                    alt="Jonny Bender">
+
+            </div>
+
+            <div class="photo-card">
+
+                <img
+                    src="photos/Bender 5.png"
+                    alt="Jonny Bender">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact">
+
+        <h2>CONNECT</h2>
+
+        <p>
+            📧
+            <a href="mailto:jonbndr@gmail.com">
+                Email Me
+            </a>
+        </p>
+
+        <p>
+            👍
+            <a
+                href="https://www.facebook.com/jonny.bender.3"
+                target="_blank"
+                rel="noopener noreferrer">
+                Follow me on Facebook
+            </a>
+        </p>
+
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Jonny Bender Music
+        </p>
+
+    </footer>
+
+    <!-- =========================
+         VISITOR COUNTER
+    ========================== -->
+
+    <div
+        style="
+            text-align:center;
+            color:white;
+            font-size:32px;
+            margin:20px 0;
+        ">
+
+        Visitors:
+        <span
+            class="counterapi"
+            noIcon="true"
+            noLink="true"
+            bg="transparent">
+        </span>
 
     </div>
 
-</div>
-
-
-
-
-<div class="video-card">
-
-<iframe 
-src="https://www.youtube.com/embed/MY9yEIu1Ilw"
-title="Killing Angels"
-frameborder="0"
-allowfullscreen>
-</iframe>
-
-<h3>Killing Angels</h3>
-
-<p>
-Completey written, performend and recorded by JB
-</p>
-
-</div>
-
-
-</div>
-
-<section id="about">
-
-<h2>ABOUT JONNY BENDER</h2>
-
-<p>
-For Bender, live music isn’t just about playing songs—it’s about creating a shared experience with the room.
-Armed with a solo acoustic guitar and a passion for great melodies, Bender brings high-energy acoustic renditions of rock and pop favorites from the 90s through today. From nostalgic throwbacks to current chart-toppers, every setlist is built to keep listeners singing along, tapping their feet, and feeling right at home.
-The Live Experience
-What sets Bender apart on stage is a genuine love for audience interaction. There’s no strict wall between the performer and the crowd; every show is tailored to the energy of the room, turning a simple performance into a fun, interactive event.
-"If there’s an audience ready to listen, I’m ready to play."
-Any Stage, Anywhere
-No crowd is too intimate, and no stage is too large. Bender approaches every setting with the exact same passion—whether it’s:
-•	Cozy coffee shops and local acoustic rooms
-•	Vibrant bars, breweries, and private events
-•	Festival stages in front of thousands of fans
-Wherever there’s a spot to plug in and play, Bender delivers an authentic, high-energy acoustic performance that leaves a lasting impression long after the final chord.
-
-</p>
-
-</section>
-
-
-
-<section id="contact">
-
-<h2>CONNECT</h2>
-<p>
-    📧 <a href="mailto:jonbndr@gmail.com">Email Me</a>
-</p>
-
-<p>
-    👍 <a href="https://www.facebook.com/jonny.bender.3" target="_blank">
-        Follow me on Facebook
-    </a>
-</p>
-
-</section>
-<section id="photos">
-
-<h2>PHOTOS</h2>
-
-<p>
-Moments from the journey. The stories behind the songs.
-</p>
-
-<div class="photo-grid">
-
-<div class="photo-card">
-<img src="photos/bender 2.jpg" alt="Jonny Bender1">
-</div>
-
-<div class="photo-card">
-<img src="photos/bender 3.jpg" alt="Jonny Bender2">
-</div>
-
-<div class="photo-card">
-<img src="photos/bender5.jpg" alt="Jonny Bender3">
-</div>
-
-<div class="photo-card">
-<img src="photos/Bender 4.png" alt="Jonny Bender4">
-</div>
-
-<div class="photo-card">
-<img src="photos/Bender 6.jpg" alt="Jonny Bender5">
-</div>
-
-<div class="photo-card">
-<img src="photos/Bender 7.jpg" alt="Jonny Bender6">
-</div>
-  
-<div class="photo-card">
-<img src="photos/Bender 5.png" alt="Jonny Bender7">
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>
-© 2026 Jonny Bender Music
-</p>
-
-</footer>
-
-<div style="text-align:center; color:white; font-size:32px; margin:20px 0;">
-    Visitors: <span class="counterapi" noIcon="true" noLink="true" bg="transparent"></span>
-</div>
-
-<script src="https://counterapi.com/c.js?ns=jonnybendermusic.com" async></script>
+    <script
+        src="https://counterapi.com/c.js?ns=jonnybendermusic.com"
+        async>
+    </script>
 
 </body>
+
 </html>
+```
